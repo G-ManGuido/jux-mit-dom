@@ -28,5 +28,6 @@ const changeColor = document.getElementById('farbeAuswahlen');
 button.addEventListener('click', function () {
   event.preventDefault();
   let bgColor = changeColor.value.toLowerCase().replace(' ', '');
+  // document.forms.style.backgroundColor = changeColor.value.toLowerCase().replace(' ', '');
   document.getElementsByTagName('form')[0].style.backgroundColor = bgColor;
 });
